@@ -20,7 +20,7 @@ Das 'Simple Google News DE' WordPress Plugin erleichtert die Anzeige der Google 
 
 [google_news]
 
-Im Widget kannst Du die Region der Nachrichten auswählen, aktuell sin die Regin auf Deutschland, österreich, Schweiz, Gro�britannien und die USA beschrähnkt. Auf Anfrage kann ich gerne weitere Regionen hinzufügen.
+Im Widget kannst Du die Region der Nachrichten auswählen, aktuell sin die Regin auf Deutschland, österreich, Schweiz, Großbritannien und die USA beschrähnkt. Auf Anfrage kann ich gerne weitere Regionen hinzufügen.
 
 = Parameter =
 
@@ -91,6 +91,8 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Kleinere Korreturen in der Beschreibung des Plugins
 = 1.0.2 =
 * Kleinere Korreturen in der Beschreibung des Plugins
+= 1.0.3 =
+* Plugin hat jetzt ein Icon und Banner 
 
 == Upgrade Notice ==
 
@@ -98,4 +100,5 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Kleinere Korreturen in der Beschreibung des Plugins
 = 1.0.2 =
 * Kleinere Korreturen in der Beschreibung des Plugins
-
+= 1.0.3 =
+* Plugin hat jetzt ein Icon und Banner 
