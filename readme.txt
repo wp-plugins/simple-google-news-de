@@ -26,15 +26,15 @@ Im Widget kannst Du die Region der Nachrichten auswählen, aktuell sin die Regin
 
 Es gibt eine Handvoll  optionale Parameter, die man verwenden kann, um die Ausgabe anzupassen.
 
-**query** � *Default: none*. Verwende diese Option, wenn Du Nachrichten zu einem bestimmten Wort oder Ausdruck von Google News einbinden moechtest.
+**query** *Default: none*. Verwende diese Option, wenn Du Nachrichten zu einem bestimmten Wort oder Ausdruck von Google News einbinden moechtest.
 
-**limit** � *Default: 5, Max: 10*. Mit dem Parameter "Limit", kannst Du die maximale Anzahl der Ergebnisse festlegen, die in Deinem Beitrag oder Seite angezeigt werden.
+**limit** *Default: 5, Max: 10*. Mit dem Parameter "Limit", kannst Du die maximale Anzahl der Ergebnisse festlegen, die in Deinem Beitrag oder Seite angezeigt werden.
 
-**images** � *Default: on*. Die Bilder werden standardmässig angezeigt. Wenn Du sie ausschalten möchtest, stelle den Bildern Parameter auf "Off". Hinweis: Nicht alle Nachrichten Storys werden ein Bild haben.
+**images** *Default: on*. Die Bilder werden standardmässig angezeigt. Wenn Du sie ausschalten möchtest, stelle den Bildern Parameter auf "Off". Hinweis: Nicht alle Nachrichten Storys werden ein Bild haben.
 
-**length** � *Default: 300*. Der Parameter "length" steuert die Anzahl der Zeichen in der Beschreibung (wird auf das nächste ganze Wort gerundet), die angezeigt werden sollen.
+**length** *Default: 300*. Der Parameter "length" steuert die Anzahl der Zeichen in der Beschreibung (wird auf das nächste ganze Wort gerundet), die angezeigt werden sollen.
 
-**region** � *Default: de*. Mit dem Parameter "Region", kannst Du  Nachrichten von einem bestimmten Teil der Welt anzeigen lassen. Um die Liste der aktuell unterstützten Regionen zu sehen, besuche [link] (https://support.google.com/news/answer/40237?hl=de "Diese Seite"). Beachte den Parameter "definiert", die in jeder Region Link vorhanden ist. Zum Beispiel österreich de_at Parameter auf 'de_at' eingestellt ist. Das ist der Wert, den Du verwendest, um Nachrichten aus der jeweiligen Region anzuzeigen.
+**region** *Default: de*. Mit dem Parameter "Region", kannst Du  Nachrichten von einem bestimmten Teil der Welt anzeigen lassen. Um die Liste der aktuell unterstützten Regionen zu sehen, besuche [link] (https://support.google.com/news/answer/40237?hl=de "Diese Seite"). Beachte den Parameter "definiert", die in jeder Region Link vorhanden ist. Zum Beispiel österreich de_at Parameter auf 'de_at' eingestellt ist. Das ist der Wert, den Du verwendest, um Nachrichten aus der jeweiligen Region anzuzeigen.
 
 **sort** *Default: relevancy*. Dieser Parameter gibt Dir zusätzliche Kontrolle über die Ergebnisse, die zurückgegeben werden. Hier ist eine Liste der zulässigen Werte:
 
