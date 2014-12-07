@@ -4,7 +4,7 @@
  * Plugin Name: Simple Google News DE
  * Plugin URI: http://internet-pr-beratung.de/simple-google-news-de
  * Description: Binde mit diesem einfachen Plugin den Google News Stream zu einem bestimmten Thema in die Sidebar, Artikel oder Seite ein. 
- * Version: 1.5
+ * Version: 1.0.3
  * Author: Sammy Zimmermanns
  * Author URI: http://internet-pr-beratung.de
  * License: GPL2
