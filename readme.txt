@@ -95,6 +95,9 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Plugin hat jetzt ein Icon und Banner 
 = 1.5 =
 * Admin Panel mit Shortcode Beispielen
+= 1.5.1 =
+* Bugfix
+
 
 
 == Upgrade Notice ==
@@ -107,4 +110,6 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Plugin hat jetzt ein Icon und Banner
 = 1.5 =
 * Admin Panel mit Shortcode Beispielen
+= 1.5.1 =
+* Bugfix
  
