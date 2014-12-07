@@ -93,7 +93,7 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Kleinere Korreturen in der Beschreibung des Plugins
 = 1.0.3 =
 * Plugin hat jetzt ein Icon und Banner 
-= 1.5=
+= 1.5 =
 * Admin Panel mit Shortcode Beispielen
 
 
@@ -105,6 +105,6 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Kleinere Korreturen in der Beschreibung des Plugins
 = 1.0.3 =
 * Plugin hat jetzt ein Icon und Banner
-= 1.5=
+= 1.5 =
 * Admin Panel mit Shortcode Beispielen
  
