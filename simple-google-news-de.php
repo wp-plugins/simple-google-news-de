@@ -4,7 +4,7 @@
  * Plugin Name: Simple Google News DE
  * Plugin URI: http://internet-pr-beratung.de/simple-google-news-de
  * Description: Binde mit diesem einfachen Plugin den Google News Stream zu einem bestimmten Thema in die Sidebar, Artikel oder Seite ein. 
- * Version: 1.0.3
+ * Version: 1.5
  * Author: Sammy Zimmermanns
  * Author URI: http://internet-pr-beratung.de
  * License: GPL2
@@ -25,6 +25,8 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+// Prohibit direct script loading.
+defined( 'ABSPATH' ) || die( 'No direct script access allowed!' );
 
 //we need this include to parse the Google News feed with MagPie later on
 include_once(ABSPATH.WPINC.'/rss.php');
@@ -321,4 +323,71 @@ class google_news_widget extends WP_Widget {
 // register widget
 add_action('widgets_init', create_function('', 'return register_widget("google_news_widget");'))
 
+?>
+<?php
+/** Step 2 (from text above). */
+add_action( 'admin_menu', 'simple_google_news_de_menu' );
+
+/** Step 1. */
+function simple_google_news_de_menu() {
+	add_options_page( 'Simple Google News DE Options', 'Simple Google News DE', 'manage_options', 'my-unique-identifier', 'simple_google_news_de_options' );
+}
+
+/** Step 3. */
+function simple_google_news_de_options() {
+	if ( !current_user_can( 'manage_options' ) )  {
+		wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+	}
+	
+echo '<div class="wrap">';
+	echo '<h2>Shortcode Beispiele:</h2>';
+	echo '<h3>Ein einfacher Shortcode</h3>';
+        echo '<code>[google_news]</code>';
+	echo '<h3>Shortcode für 2 Nachrichten zu einem bestimmten Thema</h3>';
+	echo '<code>[google_news limit="2" topic="t"]</code><br/><br/>';
+	echo 'Diese Themen Werte kannst Du nutzen:
+<br/><br/>
+b	= Wirtschaft<br/>
+t	= Technik<br/>
+e	= Unterhaltung<br/>
+s	= Sport<br/>
+snc	= Wissenschaft<br/>
+m	= Gesundheit<br/>
+ir	= Schlagzeilen<br/>';
+	echo '<h3>Nachrichten zu einem bestimmten Suchbegriff</h3>';
+	echo '<code>[google_news query="Dein Suchbegriff"]</code>';
+	echo '<h3>Nachrichten aus einer bestimmten Region</h3>';
+	echo '<code>[google_news region="de" query="Dein Suchbegriff"]</code><br/><br/>';
+	echo 'Diese Themen Werte kannst Du nutzen:
+<br/><br/>
+de	= Deutschland<br/>
+de_at	= Österreich<br/>
+de_ch	= Schweiz<br/>
+us	= USA<br/>
+uk	= Großbritannien<br/>';
+echo '<h2>Impressum von Simple Google News DE</h2>';
+
+echo '<table class="form-table">
+			<tbody>
+				<tr>
+					<th scope="row">Autor</th>
+					<td>
+						<p>
+							<a href="http://internet-pr-beratung.de">
+								<img class="sgnde-about-logo" src="/wp-content/plugins/simple-google-news-de/images/internet-pr-beratung-logo.png" alt="Zimmermanns Internet & PR-Beratung">
+							</a>
+						</p>
+						<p>
+							Sammy Zimmermanns<br>Waldheimer Str. 16a<br>01159 Dresden						</p>
+						<p>
+							E-Mail: <a href="mailto:zimmermanns@internet-pr-beratung.de">zimmermanns@internet-pr-beratung.de</a><br>Website: <a title="internet-pr-beratung.de" href="http://internet-pr-beratung.de">internet-pr-beratung.de</a>						</p>
+					</td>
+				</tr>
+			
+
+			</tbody>
+		</table>';
+	echo '</div>';
+
+}
 ?>
