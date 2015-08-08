@@ -5,7 +5,7 @@ Author URI: http://internet-pr-beratung.de/
 Plugin URI: http://internet-pr-beratung.de/simple-google-news-de
 Tags: google, google news, rss, feed, news
 Requires at least: 2.5
-Tested up to: 4.2.2
+Tested up to: 4.2.4
 Stable tag: 3.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -99,6 +99,8 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Bugfix
 = 1.5.2 =
 * Bugfix
+= 1.5.3 =
+* Bugfix and check compatibility to WP 4.3
 
 
 
@@ -117,5 +119,8 @@ Ja! Du musst nur sicherstellen, dass die doppelten Anführungszeichen in einfach
 * Bugfix
 = 1.5.2 =
 * Bugfix
+= 1.5.3 =
+* Bugfix and check compatibility to WP 4.3
+
 
  

@@ -4,7 +4,7 @@
  * Plugin Name: Simple Google News DE
  * Plugin URI: http://internet-pr-beratung.de/simple-google-news-de
  * Description: Binde mit diesem einfachen Plugin den Google News Stream zu einem bestimmten Thema in die Sidebar, Artikel oder Seite ein. 
- * Version: 1.5.2
+ * Version: 1.5.3
  * Author: Sammy Zimmermanns
  * Author URI: http://internet-pr-beratung.de
  * License: GPL2
@@ -203,8 +203,9 @@ function build_feed($atts, $newsUrl, $iswidget) {
 class google_news_widget extends WP_Widget {
 
 	// constructor
-	function google_news_widget() {
-		parent::WP_Widget(false, $name = __('Google News Widget', 'wp_widget_plugin') );
+	
+	function __construct() {
+		parent::__construct(false, $name = __('Google News Widget', 'wp_widget_plugin') );
 	}
 
 	// widget form creation
@@ -294,7 +295,7 @@ class google_news_widget extends WP_Widget {
 		$instance = $old_instance;
 		$instance['query'] = strip_tags($new_instance['query']);
 		$instance['limit'] = strip_tags($new_instance['limit']);
-                $instance['region'] = strip_tags($new_instance['region']);
+        $instance['region'] = strip_tags($new_instance['region']);
 		$instance['images'] = strip_tags($new_instance['images']);
 		$instance['sort'] = strip_tags($new_instance['sort']);
 		$instance['length'] = strip_tags($new_instance['length']);
